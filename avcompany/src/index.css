@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    textarea, input {
+      @apply border-[1px] border-black rounded-[3px] py-2 px-4
+    }
+    label {
+      @apply text-[13px]
+    }
+    .container{
+      @apply w-[1270px] mx-auto px-[15px]
+    }
+    .menu-active {
+      @apply underline text-[#6558B1] underline-offset-4 decoration-2
+    }
+    .menu-option{
+      @apply transition cursor-pointer
+    }
+    .menu-option:hover {
+      @apply text-[#6558B1]
+    }
+}
+/* styles.css */
+.shadow-2xl {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-white {
+  box-shadow: 0 0 10px white;
+}
