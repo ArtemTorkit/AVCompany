@@ -6,12 +6,12 @@ const Question = () => {
     <section className="container text-black mt-[100px]">
       <div className="flex justify-between items-center relative top-0 left-0">
         {/* Image on the left */}
-        <div className="">
+        <div className="hidden sm:block">
           <img src={questionOne} alt="" className="rounded-[3px]" />
         </div>
         {/* Content in the center with absolute positioning */}
-        <div className="absolute w-full h-full flex justify-center items-center">
-          <div className="top-0 left-0 max-w-[490px] bg-yellow p-[40px] flex flex-col gap-[38px] rounded-[3px] shadow-lg shadow-[#6c6c6c]">
+        <div className="sm:absolute w-full h-full flex justify-center items-center">
+          <div className="top-0 left-0 sm:max-w-[490px] bg-yellow p-[40px] flex flex-col gap-[38px] rounded-[3px] shadow-lg shadow-[#6c6c6c]">
             <h3 className="text-black text-[24px] font-bold">
               Do you have questions?
             </h3>
@@ -55,7 +55,7 @@ const Question = () => {
           </div>
         </div>
         {/* Image on the right */}
-        <div className="">
+        <div className="hidden sm:block">
           <img src={questionTwo} alt="" className="rounded-[3px]" />
         </div>
       </div>

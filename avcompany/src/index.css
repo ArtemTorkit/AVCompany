@@ -13,7 +13,7 @@
       @apply w-[1270px] mx-auto px-[15px]
     }
     .menu-active {
-      @apply underline text-[#6558B1] underline-offset-4 decoration-2
+      @apply underline text-[#6558B1] underline-offset-4 decoration-2 font-bold
     }
     .menu-option{
       @apply transition cursor-pointer
@@ -21,12 +21,59 @@
     .menu-option:hover {
       @apply text-[#6558B1]
     }
+    .card-photo {
+      @apply w-[344px] h-[250px] overflow-hidden 
+    }
+    .card-item-photo {
+      @apply object-center object-cover h-full w-full
+    }
+    .active-link {
+      @apply text-purple underline
+    }
+
+    /*Slider styles*/
+    .each-slide-effect > div {
+      @apply h-[70vh] md:h-[70vh]
+    }
 }
 /* styles.css */
-.shadow-2xl {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-.shadow-white {
-  box-shadow: 0 0 10px white;
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/*Slider styles*/
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  border-radius: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
 }

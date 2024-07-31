@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="mt-[150px] bg-[#282828] text-white py-[30px]">
-      <div className="flex justify-between items-start container h-[220px]">
+      <div className="flex flex-col gap-[25px] items-center  lg:flex-row lg:justify-between lg:items-start container lg:h-[220px]">
         <div className="max-w-[300px] flex flex-col gap-[15px] justify-between">
           <div className="flex items-center gap-[15px]">
             <div className=" ">
@@ -41,7 +41,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="max-w-[300px] flex flex-col justify-between h-full">
+        <div className="max-w-[300px] flex flex-col justify-between h-full gap-[10px]">
           <p className="font-bold">Get in touch</p>
           <div className="flex items-center gap-[10px]">
             <img src={phoneYellow} alt="" />
@@ -57,7 +57,7 @@ const Footer = () => {
             <p>7 AM - 8 PM : Monday - Saturday</p>
           </div>
         </div>
-        <div className="max-w-[300px] flex flex-col gap-[15px] justify-between">
+        <div className="max-w-[300px] flex flex-col  gap-[15px] justify-between">
           <p className="font-bold">Service areas</p>
           <div className="flex gap-[10px]">
             <ul>

@@ -20,6 +20,14 @@ import clock from './clock.svg'
 
 import formBg from './form-bg.jpg'
 
+import handyman from './handyman.svg'
+import cleaning from './cleaning.svg'
+
+import handymanLogo from './handyman.png'
+import cleaningAnimation from './cleaning-animation.gif'
+
+import loading from './loading.gif'
+
 export {
     clock,
     logo,
@@ -37,6 +45,10 @@ export {
     phoneYellow,
     message,
     mapPinYellow,
-    formBg
-    
+    formBg,
+    handyman,
+    cleaning,
+    cleaningAnimation,
+    handymanLogo,
+    loading
 }

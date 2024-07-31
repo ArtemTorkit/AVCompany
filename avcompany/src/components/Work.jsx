@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
-import { blackPhone, line } from "../assets";
+import { blackPhone, calendar, line, stars } from "../assets";
 
 const Work = () => {
   return (
-    <section className="bg-purple py-[30px] mt-[100px]">
+    <section className="bg-purple py-[30px] mt-[100px] ">
       <div className="text-center">
-        <h2 className="text-[38px] font-bold mt-[30px]">How do we work?</h2>
+        <h2 className="text-[30px] md:text-[38px] font-bold mt-[30px]">
+          How do we work?
+        </h2>
       </div>
-      <div className="mt-[50px] flex justify-between items-center">
+      <div className="mt-[50px] flex flex-col md:flex-row gap-[30px] md:gap-0 justify-between items-center container">
         <div className="flex flex-col items-center gap-[10px] max-w-[280px] text-center">
           <div className="flex justify-center items-center bg-yellow rounded-full shadow-md shadow-[#333] h-[100px] w-[100px]">
             <img src={blackPhone} alt="" />
@@ -18,30 +20,28 @@ const Work = () => {
             Choose everything that needs to be done in your property
           </div>
         </div>
-        <div className="">
+        <div className="hidden md:block">
           <img src={line} alt="" />
         </div>
         <div className="flex flex-col items-center gap-[10px] max-w-[280px] text-center">
           <div className="flex justify-center items-center bg-yellow rounded-full shadow-md shadow-[#333] h-[100px] w-[100px]">
-            <img src={blackPhone} alt="" />
+            <img src={calendar} alt="" />
           </div>
-          <div className="font-bold">01</div>
-          <div className="font-bold">Easy online Contact</div>
-          <div className="">
-            Choose everything that needs to be done in your property
-          </div>
+          <div className="font-bold">02</div>
+          <div className="font-bold">Choose Date & Time</div>
+          <div className="">Schedule the service at your convenience</div>
         </div>
-        <div className="">
+        <div className="hidden md:block">
           <img src={line} alt="" />
         </div>
         <div className="flex flex-col items-center gap-[10px] max-w-[280px] text-center">
           <div className="flex justify-center items-center bg-yellow rounded-full shadow-md shadow-[#333] h-[100px] w-[100px]">
-            <img src={blackPhone} alt="" />
+            <img src={stars} alt="" />
           </div>
-          <div className="font-bold">01</div>
-          <div className="font-bold">Easy online Contact</div>
+          <div className="font-bold">03</div>
+          <div className="font-bold">Enjoy the Result</div>
           <div className="">
-            Choose everything that needs to be done in your property
+            Sit back and relax while we take care of your needs
           </div>
         </div>
       </div>

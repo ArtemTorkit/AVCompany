@@ -1,12 +1,21 @@
+import { useEffect } from "react";
 import { mainBg, mapPin } from "../assets";
 import { Link } from "react-router-dom";
 import ServicesCards from "../components/ServicesCards";
 import Question from "../components/Question";
 import Work from "../components/Work";
 import HandymanServices from "../components/HandymanServices";
-import Galery from "../components/Galery";
 
 const Main = () => {
+  useEffect(() => {
+    // Preload the main background image
+    const img = new Image();
+    img.src = mainBg;
+
+    return () => {
+      // Cleanup if necessary (optional)
+    };
+  }, []);
 
   return (
     <div className="relative top-0 left-0 w-full text-white mt-[10vh]">
@@ -17,6 +26,7 @@ const Main = () => {
           className="absolute top-0 left-0 h-full w-full object-cover object-bottom brightness-[60%]"
           srcSet={`${mainBg} 1920w, ${mainBg} 640w`}
           sizes="(max-width: 640px) 100vw, 1920px"
+          loading="lazy"
         />
         <section className="container relative z-10 text-left sm:text-center flex items-center justify-center h-full w-full font-montserrat font-bold">
           <div className="flex flex-col justify-start sm:justify-center sm:items-center gap-[18px] text-[13px] sm:text-[17px] ">
@@ -64,7 +74,6 @@ const Main = () => {
       <div>
         <ServicesCards />
         <HandymanServices />
-        <Galery/>
         <Work />
         <Question />
       </div>
