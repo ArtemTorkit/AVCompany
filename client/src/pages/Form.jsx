@@ -41,7 +41,7 @@ const ContactForm = () => {
       <div className="container">
         <div className=" flex-col-reverse md:flex-row flex justify-center">
           <div className="relative top-0 left-0 text-white p-[30px] ">
-            <img
+            <img loading="lazy"
               src={formBg}
               alt=""
               className="absolute z-1 top-0 left-0 brightness-[70%] h-[100%] w-full md:w-auto object-cover object-center"
@@ -52,7 +52,7 @@ const ContactForm = () => {
                 <ul>
                   {cities.map((city) => (
                     <li key={city} className="flex items-center gap-[10px]">
-                      <img src={mapPinYellow} alt="" />
+                      <img loading="lazy" src={mapPinYellow} alt="" />
                       {city}
                     </li>
                   ))}
@@ -62,12 +62,12 @@ const ContactForm = () => {
               <div className="w-full flex flex-col  items-center">
                 <p className="font-bold">Email</p>
                 <div className="flex items-center gap-[10px]">
-                  <img src={message} alt="" />
+                  <img loading="lazy" src={message} alt="" />
                   <p>avcompany45@gmail.com</p>
                 </div>
                 <p className="font-bold mt-[30px]">Work Hours</p>
                 <div className="flex items-center gap-[10px]">
-                  <img src={clock} alt="" />
+                  <img loading="lazy" src={clock} alt="" />
                   <p>7 AM - 8 PM : Monday - Saturday</p>
                 </div>
               </div>
@@ -231,7 +231,7 @@ const ContactForm = () => {
                       className={`hover:bg-black group hover:text-white transition flex justify-center items-center gap-[6px]  bg-yellow w-full h-[50px] text-black rounded-[3px]`}>
                       {isSending ? (
                         <>
-                          <img
+                          <img loading="lazy"
                             src={loading}
                             alt=""
                             className="w-[40px] h-[40px]"

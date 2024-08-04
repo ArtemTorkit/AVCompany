@@ -7,7 +7,7 @@ const Question = () => {
       <div className="flex justify-between items-center relative top-0 left-0">
         {/* Image on the left */}
         <div className="hidden sm:block">
-          <img src={questionOne} alt="" className="rounded-[3px]" />
+          <img loading="lazy" src={questionOne} alt="" className="rounded-[3px]" />
         </div>
         {/* Content in the center with absolute positioning */}
         <div className="sm:absolute w-full h-full flex justify-center items-center">
@@ -56,7 +56,7 @@ const Question = () => {
         </div>
         {/* Image on the right */}
         <div className="hidden sm:block">
-          <img src={questionTwo} alt="" className="rounded-[3px]" />
+          <img loading="lazy" src={questionTwo} alt="" className="rounded-[3px]" />
         </div>
       </div>
     </section>

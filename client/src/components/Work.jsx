@@ -12,7 +12,7 @@ const Work = () => {
       <div className="mt-[50px] flex flex-col md:flex-row gap-[30px] md:gap-0 justify-between items-center container">
         <div className="flex flex-col items-center gap-[10px] max-w-[280px] text-center">
           <div className="flex justify-center items-center bg-yellow rounded-full shadow-md shadow-[#333] h-[100px] w-[100px]">
-            <img src={blackPhone} alt="" />
+            <img loading="lazy" src={blackPhone} alt="" />
           </div>
           <div className="font-bold">01</div>
           <div className="font-bold">Easy online Contact</div>
@@ -21,22 +21,22 @@ const Work = () => {
           </div>
         </div>
         <div className="hidden md:block">
-          <img src={line} alt="" />
+          <img loading="lazy" src={line} alt="" />
         </div>
         <div className="flex flex-col items-center gap-[10px] max-w-[280px] text-center">
           <div className="flex justify-center items-center bg-yellow rounded-full shadow-md shadow-[#333] h-[100px] w-[100px]">
-            <img src={calendar} alt="" />
+            <img loading="lazy" src={calendar} alt="" />
           </div>
           <div className="font-bold">02</div>
           <div className="font-bold">Choose Date & Time</div>
           <div className="">Schedule the service at your convenience</div>
         </div>
         <div className="hidden md:block">
-          <img src={line} alt="" />
+          <img loading="lazy" src={line} alt="" />
         </div>
         <div className="flex flex-col items-center gap-[10px] max-w-[280px] text-center">
           <div className="flex justify-center items-center bg-yellow rounded-full shadow-md shadow-[#333] h-[100px] w-[100px]">
-            <img src={stars} alt="" />
+            <img loading="lazy" src={stars} alt="" />
           </div>
           <div className="font-bold">03</div>
           <div className="font-bold">Enjoy the Result</div>

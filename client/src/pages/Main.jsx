@@ -5,19 +5,21 @@ import Question from "../components/Question";
 import Work from "../components/Work";
 import HandymanServices from "../components/HandymanServices";
 import Galery from "../components/Galery";
-
 const Main = () => {
 
   return (
     <div className="relative top-0 left-0 w-full text-white mt-[10vh]">
-      <div className="relative w-full h-[80vh] max-h-[1920px]">
-        <img
-          src={mainBg}
-          alt=""
-          className="absolute top-0 left-0 h-full w-full object-cover object-bottom brightness-[60%]"
-          srcSet={`${mainBg} 1920w, ${mainBg} 640w`}
-          sizes="(max-width: 640px) 100vw, 1920px"
-        />
+      <div className="relative w-full h-[80vh]">
+        <div className="absolute top-0 left-0 w-full h-full">
+          <img
+            src={mainBg}
+            alt="background"
+            width="2560"
+            height="1125"
+            className="h-full w-full object-cover object-bottom brightness-[60%]"
+            loading="lazy"
+          />
+        </div>
         <section className="container relative z-10 text-left sm:text-center flex items-center justify-center h-full w-full font-montserrat font-bold">
           <div className="flex flex-col justify-start sm:justify-center sm:items-center gap-[18px] text-[13px] sm:text-[17px] ">
             <div className="">
@@ -64,7 +66,7 @@ const Main = () => {
       <div>
         <ServicesCards />
         <HandymanServices />
-        <Galery/>
+        <Galery />
         <Work />
         <Question />
       </div>

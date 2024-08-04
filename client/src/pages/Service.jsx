@@ -37,7 +37,7 @@ const Service = () => {
               <div className="flex flex-wrap gap-[5px]">
                 {cities.map((city, index) => (
                   <div className="" key={index}>
-                    <img
+                    <img loading="lazy"
                       src={mapPinYellow}
                       className="inline-block mr-[3px] relative top-[-2px] left-0"
                     />
@@ -75,7 +75,7 @@ const Service = () => {
             className=" block w-full md:w-[300px] shadow-md shadow-[#7b7b7b] transition hover:shadow-sm"
             to={"/service/Deep Cleaning Service"}>
             <div className="w-full h-[250px]">
-              <img
+              <img loading="lazy"
                 src={clean3}
                 alt=""
                 className="w-full h-full object-cover object-center brightness-90 transition hover:brightness-100"
@@ -89,7 +89,7 @@ const Service = () => {
             className="w-full md:w-[300px] shadow-md shadow-[#7b7b7b] transition hover:shadow-sm"
             to={"/service/Deep Cleaning Service"}>
             <div className="w-full h-[250px] ]">
-              <img
+              <img loading="lazy"
                 src="https://www.tastingtable.com/img/gallery/heres-why-you-shouldnt-clean-your-fridge-with-bleach/introduction-1650660627.jpg"
                 alt=""
                 className="w-full h-full object-cover object-center brightness-90 transition hover:brightness-100"
@@ -103,7 +103,7 @@ const Service = () => {
             className="w-full md:w-[300px] shadow-md shadow-[#7b7b7b] transition hover:shadow-sm"
             to={"/service/Vacation Home Cleaning"}>
             <div className="w-full h-[250px] ">
-              <img
+              <img loading="lazy"
                 src="https://ecoglowcleaning.com/wp-content/uploads/2022/11/Cleaning-service-employees-wit.jpg"
                 alt=""
                 className="w-full h-full object-cover object-center brightness-90 transition hover:brightness-100 "
@@ -117,7 +117,7 @@ const Service = () => {
             className="w-full md:w-[300px] shadow-md shadow-[#7b7b7b] transition hover:shadow-sm"
             to={"/service/House Remodeling Services"}>
             <div className="w-full h-[250px] ">
-              <img
+              <img loading="lazy"
                 src="https://newcreationsaustin.com/wp-content/uploads/2022/04/Austin-home-remodel-img-3.png"
                 alt=""
                 className="w-full h-full object-cover object-center brightness-90 transition hover:brightness-100 "
@@ -131,7 +131,7 @@ const Service = () => {
             className="w-full md:w-[300px] shadow-md shadow-[#7b7b7b] transition hover:shadow-sm"
             to={"/service/Bathroom Remodeling"}>
             <div className="w-full h-[250px] ">
-              <img
+              <img loading="lazy"
                 src="https://www.schatz-construction.com/wp-content/uploads/Schatz-Construction-Small-Bathroom-Remodeling.webp"
                 alt=""
                 className="w-full h-full object-cover object-center brightness-90 transition hover:brightness-100 "

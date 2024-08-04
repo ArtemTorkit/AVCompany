@@ -66,7 +66,7 @@ const Header = () => {
             to={"/"}
             className="flex items-center gap-[15px] text-[12px] md:text-[15px]">
             <div className=" ">
-              <img src={logo} alt="" className="w-[40px] h-[40px]" />
+              <img loading="lazy" src={logo} alt="" className="w-[40px] h-[40px]" />
             </div>
             <div className="">
               <p className="font-bold text-[19px] sm:text-[15px]">VA Company</p>
@@ -99,7 +99,7 @@ const Header = () => {
                 }menu-active menu-option`}>
                 Services
               </p>
-              <img src={downArrow} alt="" />
+              <img loading="lazy" src={downArrow} alt="" />
               <div
                 className={`hidden group-hover:block font-normal max-h-[300px] overflow-auto bg-white absolute z-50 top-[100%] right-[30px] w-[270px]  rounded-[3px] shadow-lg border border-gray-200`}>
                 <p className="font-bold p-2">Handyman Services</p>
@@ -125,7 +125,7 @@ const Header = () => {
 
             <li className="flex gap-[6px] items-center relative group">
               <p className="menu-option">Areas</p>
-              <img src={downArrow} alt="Down Arrow" />
+              <img loading="lazy" src={downArrow} alt="Down Arrow" />
               <div className="hidden group-hover:block font-normal max-h-[300px] overflow-auto bg-white absolute z-50 top-[100%] left-0 w-[270px] rounded-[3px] shadow-lg border border-gray-200">
                 {cities.map((city) => (
                   <Link
@@ -150,7 +150,7 @@ const Header = () => {
           <div className="hidden md:block">
             <div className="flex items-center gap-[15px]">
               <a href="tel:+1(561)866-9987">
-                <img src={phone} alt="" />
+                <img loading="lazy" src={phone} alt="" />
               </a>
               <div className=" text-[13px] lg:text-[20px]">
                 <p className="">Quick contact</p>
@@ -215,7 +215,7 @@ const Header = () => {
                 }menu-active menu-option`}>
                 Services
               </p>
-              <img src={downArrow} alt="" />
+              <img loading="lazy" src={downArrow} alt="" />
             </li>
             {isServicesActive && (
               <div className="max-h-[20vh] overflow-auto font-normal">
@@ -249,7 +249,7 @@ const Header = () => {
                 }menu-active menu-option`}>
                 Areas
               </p>
-              <img src={downArrow} alt="Down Arrow" />
+              <img loading="lazy" src={downArrow} alt="Down Arrow" />
             </li>
             {isAreasActive && (
               <div className=" font-normal max-h-[20vh] overflow-auto w-full  rounded-[3px]">

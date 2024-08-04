@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="max-w-[300px] flex flex-col gap-[15px] justify-between">
           <div className="flex items-center gap-[15px]">
             <div className=" ">
-              <img src={logo} alt="" className="w-[40px] h-[40px]" />
+              <img loading="lazy" src={logo} alt="" className="w-[40px] h-[40px]" />
             </div>
             <div className="">
               <p className="font-bold">VA Company</p>
@@ -44,16 +44,16 @@ const Footer = () => {
         <div className="max-w-[300px] flex flex-col justify-between h-full gap-[10px]">
           <p className="font-bold">Get in touch</p>
           <div className="flex items-center gap-[10px]">
-            <img src={phoneYellow} alt="" />
+            <img loading="lazy" src={phoneYellow} alt="" />
             <p>+1(561)866-9987</p>
           </div>
           <div className="flex items-center gap-[10px]">
-            <img src={message} alt="" />
+            <img loading="lazy" src={message} alt="" />
             <p>avcompany45@gmail.com</p>
           </div>
           <p className="font-bold">Work Hours</p>
           <div className="flex items-center gap-[10px]">
-            <img src={clock} alt="" />
+            <img loading="lazy" src={clock} alt="" />
             <p>7 AM - 8 PM : Monday - Saturday</p>
           </div>
         </div>
@@ -62,65 +62,65 @@ const Footer = () => {
           <div className="flex gap-[10px]">
             <ul>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Lake Worth</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Boynton Beach</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Boca Raton</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>West Palm Beach</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Deerfield</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Pompano Beach</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Riviera Beach</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Jupiter</p>
               </li>
             </ul>
             <ul>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Wellington</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Delray Beach</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Fort Lauderdale</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Plantation</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Coral Springs</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Greenacres</p>
               </li>
               <li className="flex items-ceneter gap-[10px]">
-                <img src={mapPinYellow} alt="" />
+                <img loading="lazy" src={mapPinYellow} alt="" />
                 <p>Loxahatchee</p>
               </li>
             </ul>
