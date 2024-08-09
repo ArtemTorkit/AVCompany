@@ -20,7 +20,7 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/send-email', (req, res) => {
-    const { firstname, lastname, email, city, message, address } = req.body;
+    const { firstname, lastname, email, city, message, address, phonenumber } = req.body;
 
     const html =
     `
@@ -28,6 +28,7 @@ app.post('/send-email', (req, res) => {
     <br>Name: ${firstname} ${lastname}</br>
     <br>Email: ${email}</br>
     <br>Address: ${address}, ${city}</br>
+    <br>Phonenumber: ${phonenumber}</br>
     <p></p>
     <h3>Message:</h3>
     <p>${message}</p>
